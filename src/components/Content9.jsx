@@ -79,11 +79,7 @@ class Content extends React.Component {
         tag: { tag: '人工客服', icon: 'icon-kefu' },
         img: <img width="100%" src="https://zos.alipayobjects.com/rmsportal/xBrUaDROgtFBRRL.png" />,
         text: `<h3>技术</h3>
-丰富的技术组件，简单组装即可快速搭建金融级应用，丰富的技术组件，简单组装即可快速搭建金融级应用。
-<h3>融合</h3>
-解放业务及技术生产力，推动金融服务底层创新，推动金融服务底层创新。解放业务及技术生产力，推动金融服务底层创新。
-<h3>开放</h3>
-符合金融及要求的安全可靠、高可用、高性能的服务能力，符合金融及要求的安全可靠、高可用、高性能的服务能力。`,
+丰富的技术组件，简单组装即可快速搭建金融级应用，丰富的技术组件，简单组装即可快速搭建金融级应用。`,
       },
       {
         tag: { tag: '工单系统', icon: 'icon-gongdanxinxi' },
