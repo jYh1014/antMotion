@@ -1,0 +1,29 @@
+{
+    "apps":[{
+        "name": "antMotion",
+        "script": "server/app.js",
+        "env": {
+            "COMMON_VARIABLE":"true"
+        },
+        "env_production":{
+            "NODE_ENV":"production"
+        }
+        }
+
+    ],
+    "deploy":{
+        "production":{
+            "user":"cyh_manager",
+            "host":["47.93.30.123"],
+            "port":"39999",
+            "ref":"origin/master",
+            "repo":"https://github.com/jYh1014/antMotion.git",
+            "path":"/www/antMotion/production",
+            "ssh_options":"StrictHostKeyChecking=no",
+            "post-deploy":"npm install --registry=http://registry.npm.taobao.org && npm run build && pm2 startOrRestart ecosystem.json --env production",
+            "env":{
+                "NODE_ENV":"production"
+            }
+        }
+    }
+}
